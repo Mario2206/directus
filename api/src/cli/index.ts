@@ -1,5 +1,4 @@
-import { Command, Option } from 'commander';
-import { startServer } from '../server';
+import { Command, Option } from 'commander';//test
 import emitter from '../emitter';
 import { getExtensionManager } from '../extensions';
 import bootstrap from './commands/bootstrap';
@@ -9,9 +8,11 @@ import dbMigrate from './commands/database/migrate';
 import init from './commands/init';
 import rolesCreate from './commands/roles/create';
 import usersCreate from './commands/users/create';
+import fs from "fs-extra"
 import usersPasswd from './commands/users/passwd';
 import { snapshot } from './commands/schema/snapshot';
 import { apply } from './commands/schema/apply';
+import { startServer } from '../server';
 
 const pkg = require('../../package.json');
 
